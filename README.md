@@ -31,6 +31,8 @@
     
 ## R Loading
 
+    getwd() # the present path
+    setwd("") # to change the path
     read.csv() #to read CSV
     read.delim() #to read tab-delimited files
     
