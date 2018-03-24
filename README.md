@@ -19,6 +19,8 @@
 
 1. "Alt-" is the keystroke of "<-"
 2. typeof() #to see an object'type
+3. The downloaded source packages are in
+	‘/tmp/Rtmp8YhId6/downloaded_packages’
 
 ## Variables & Assignment
 
