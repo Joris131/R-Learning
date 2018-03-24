@@ -12,8 +12,12 @@
 ## installing & packages loading
 
     install.packages("")
+    install.packages("", repos = "http://cran.r-project.org")
     install.packages(file_name_with_path, repo = NULL, type = "source") #to install from the local
+    
     library("package Name", lib.loc = "path to library")
+    library("")
+   
     
 ## Tips
 
