@@ -47,7 +47,8 @@
     nrow() #return the number of rows
     ncol() #return the number of columns
     dim()  #return the number of both rows and columns
-    
+    name_of_the_Data[, "name_of_the_column", drop=FALSE] # To return a dataframe with one column but not it's default behavior: to return a vector
+ 
 ### Return the names of the rows/columns/both:
 
     colnames()
