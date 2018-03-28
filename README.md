@@ -59,5 +59,11 @@
 
     name_of_the_vector_or_dataframe_or_list$name_of_the_column <- NULL
 
+## Debugging R Code:
+
+    browser()
+    options(error=recover) #options(error=NULL)
+    debug()
+    recover()
     
     
