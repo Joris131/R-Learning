@@ -15,8 +15,8 @@
     install.packages("", repos = "http://cran.r-project.org")
     install.packages(file_name_with_path, repo = NULL, type = "source") #to install from the local
     
-    library("package Name", lib.loc = "path to library")
-    library("")
+        library("package Name", lib.loc = "path to library")
+        library("")
    
     
 ## Tips
@@ -25,6 +25,7 @@
 2. typeof() #to see an object'type
 3. The downloaded source packages are in
 	‘/tmp/Rtmp8YhId6/downloaded_packages’
+4. learn more about magrittr ’s pipes in help('%>%')	
 
 ## Variables & Assignment
 
@@ -39,15 +40,15 @@
 
     getwd() # the present path
     setwd("") # to change the path
+      
+        read.table() #to read 逗号、分号或制表符分隔的数据
+        read.csv() #to read CSV
+        read.delim() #to read tab-delimited files
+        scan() #读取数据框格式的数据
     
-    read.table() #to read 逗号、分号或制表符分隔的数据
-    read.csv() #to read CSV
-    read.delim() #to read tab-delimited files
-    scan() #读取数据框格式的数据
+            data() #浏览数据列表和加载数据集（在学习函数使用方法或者新的包的时候，往往希望有实例数据对函数功能进行演示）
     
-    data() #浏览数据列表和加载数据集（在学习函数使用方法或者新的包的时候，往往希望有实例数据对函数功能进行演示）
-    
-    load() #R以外的R软件格式数据
+                load() #R以外的R软件格式数据
    
 ## Dataframe
 
@@ -86,6 +87,15 @@
     fix()
     rm()
     
-    write.table()
+        write.table()
+	
+## dplyr:
+
+    arrange()
+    filter()
+    mutate()
+    select()
+    summarize()
+    
    
     
