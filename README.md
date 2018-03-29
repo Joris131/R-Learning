@@ -93,8 +93,32 @@
     select()
     summarize() #dplyr’s summarize() handles passing the relevant column to each function and automatically creates columns with the supplied argument names.
     
-##R’s regular expressions：    
+## R’s regular expressions： 
 
+    grep() #related to Pearl
+    regex()
+    regexpr()
+
+## R scripts documenting:
+
+    Rmarkdown
+    knitr
+### Scripts should not use setwd() to set their working directory, as this is not portable to other systems (which won’t have the same directory structure). 
+### For the same reason, use relative paths like data/achievers.txt when loading in data, and not absolute paths like /Users/jlebowski/data/achievers.txt. 
+### Also, it’s a good idea to indicate (either in comments or a README file) which directory the user should set as their working directory.
+### Alternatively, we can execute a script in batch mode from the command line with:
+
+    Rscript --vanilla my_analysis.R
+    
+### I recommend using --vanilla because by default, Rscript will restore any past saved environments and save its current environment after the execution completes. Usually we don’t want R to restore any past state from previous runs, as this can lead to irreproducible results (because how a script runs depends on files only on your machine).
+
+## Saving R objects:
+
+    save()
+    savehistory() # save.history() has saved your skin a few times when I’ve needed to record past interactive work right before a server has crashed.
+    save.image()
+    
+    
 　　    　　　
    
     
