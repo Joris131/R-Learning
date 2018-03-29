@@ -39,9 +39,16 @@
 
     getwd() # the present path
     setwd("") # to change the path
-    read.csv() #to read CSV
-    read.delim() #to read tab-delimited files
     
+    read.table() #to read 逗号、分号或制表符分隔的数据
+    read.csv() #to read CSV
+    read.delim() #to read tab-delimited files
+    scan() #读取数据框格式的数据
+    
+    data() #浏览数据列表和加载数据集（在学习函数使用方法或者新的包的时候，往往希望有实例数据对函数功能进行演示）
+    
+    load() #R以外的R软件格式数据
+   
 ## Dataframe
 
     nrow() #return the number of rows
@@ -66,4 +73,19 @@
     debug()
     recover()
     
+## File briefing:
+
+    head()
+    tail()
+    str() #structure
+    ls.str()
+    
+## Data edicting
+
+    data.,entry()
+    fix()
+    rm()
+    
+    write.table()
+   
     
