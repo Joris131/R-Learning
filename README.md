@@ -14,9 +14,8 @@
     install.packages("")
     install.packages("", repos = "http://cran.r-project.org")
     install.packages(file_name_with_path, repo = NULL, type = "source") #to install from the local
-    
-        library("package Name", lib.loc = "path to library")
-        library("")
+    library("package Name", lib.loc = "path to library")
+    library("")
    
     
 ## Tips
@@ -40,15 +39,12 @@
 
     getwd() # the present path
     setwd("") # to change the path
-      
-        read.table() #to read 逗号、分号或制表符分隔的数据
-        read.csv() #to read CSV
-        read.delim() #to read tab-delimited files
-        scan() #读取数据框格式的数据
-    
-            data() #浏览数据列表和加载数据集（在学习函数使用方法或者新的包的时候，往往希望有实例数据对函数功能进行演示）
-    
-                load() #R以外的R软件格式数据
+    read.table() #to read 逗号、分号或制表符分隔的数据
+    read.csv() #to read CSV
+    read.delim() #to read tab-delimited files
+    scan() #读取数据框格式的数据
+    data() #浏览数据列表和加载数据集（在学习函数使用方法或者新的包的时候，往往希望有实例数据对函数功能进行演示）
+    load() #R以外的R软件格式数据
    
 ## Dataframe
 
@@ -86,16 +82,19 @@
     data.,entry()
     fix()
     rm()
-    
-        write.table()
+    write.table()
 	
 ## dplyr:
 
+    tbl_df() #a simple class that wraps dataframes so that they don’t fill your screen when you print them (similar to using head()).
     arrange()
     filter()
     mutate()
     select()
-    summarize()
+    summarize() #dplyr’s summarize() handles passing the relevant column to each function and automatically creates columns with the supplied argument names.
     
+##R’s regular expressions：    
+
+　　    　　　
    
     
