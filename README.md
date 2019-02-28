@@ -1,6 +1,24 @@
 # R-Learning
+## 01 Getting Help in R
+## 02 installing & packages loading
+## 03 Tips
+## 04 Variables & Assignment
+## 05 Factors & classes in R
+## 06 R Loading
+## 07 Dataframe
+## 08 Return the names of the rows/columns/both:
+## 09 To remove a column:
+## 10 Debugging R Code:
+## 11 File briefing:
+## 12 Data edicting
+## 13 dplyr:
+## 14 R’s regular expressions
+## 15 R scripts documenting
+## 16 Saving R objects
+## 17 Delete rows
+## 18 Showing colname and change colname
 
-## Getting Help in R
+## 01 Getting Help in R
 
     help("")
     ?("") # with an exact name in the branket
@@ -9,7 +27,7 @@
     example() # with an exact name in the branket
     library(help="") # with an exact package name, which helps listing all information of the choosing package
     
-## installing & packages loading
+## 02 installing & packages loading
 
     install.packages("")
     install.packages("", repos = "http://cran.r-project.org")
@@ -18,24 +36,24 @@
     library("")
    
     
-## Tips
+## 03 Tips
 
-1. "Alt-" is the keystroke of "<-"
-2. typeof() #to see an object'type
-3. The downloaded source packages are in
+### 1. "Alt-" is the keystroke of "<-"
+### 2. typeof() #to see an object's type
+### 3. The downloaded source packages are in
 	‘/tmp/Rtmp8YhId6/downloaded_packages’
-4. learn more about magrittr ’s pipes in help('%>%')	
+### 4. learn more about magrittr ’s pipes in help('%>%')	
 
-## Variables & Assignment
+## 04 Variables & Assignment
 
     ls() # to see objects we've created in the global envirenment(.Global)
     
-## Factors & classes in R
+## 05 Factors & classes in R
 
     levels() # to view a factor's levels
     table() # to count how many of each level there are in a factor
     
-## R Loading
+## 06 R Loading
 
     getwd() # the present path
     setwd("") # to change the path
@@ -46,45 +64,45 @@
     data() #浏览数据列表和加载数据集（在学习函数使用方法或者新的包的时候，往往希望有实例数据对函数功能进行演示）
     load() #R以外的R软件格式数据
    
-## Dataframe
+## 07 Dataframe
 
     nrow() #return the number of rows
     ncol() #return the number of columns
     dim()  #return the number of both rows and columns
     name_of_the_Data[, "name_of_the_column", drop=FALSE] # To return a dataframe with one column but not it's default behavior: to return a vector
  
-### Return the names of the rows/columns/both:
+## 08 Return the names of the rows/columns/both:
 
     colnames()
     rownames()
     dimnames()
     
-## To remove a column:
+## 09 To remove a column:
 
     name_of_the_vector_or_dataframe_or_list$name_of_the_column <- NULL
 
-## Debugging R Code:
+## 10 Debugging R Code:
 
     browser()
     options(error=recover) #options(error=NULL)
     debug()
     recover()
     
-## File briefing:
+## 11 File briefing:
 
     head()
     tail()
     str() #structure
     ls.str()
     
-## Data edicting
+## 12 Data edicting
 
     data.,entry()
     fix()
     rm()
     write.table()
 	
-## dplyr:
+## 13dplyr:
 
     tbl_df() #a simple class that wraps dataframes so that they don’t fill your screen when you print them (similar to using head()).
     arrange()
@@ -93,13 +111,13 @@
     select()
     summarize() #dplyr’s summarize() handles passing the relevant column to each function and automatically creates columns with the supplied argument names.
     
-## R’s regular expressions： 
+## 14 R’s regular expressions： 
 
     grep() #related to Pearl
     regex()
     regexpr()
 
-## R scripts documenting:
+## 15 R scripts documenting:
 
     Rmarkdown
     knitr
@@ -112,13 +130,20 @@
     
 ### I recommend using --vanilla because by default, Rscript will restore any past saved environments and save its current environment after the execution completes. Usually we don’t want R to restore any past state from previous runs, as this can lead to irreproducible results (because how a script runs depends on files only on your machine).
 
-## Saving R objects:
+## 16 Saving R objects:
 
     save()
     savehistory() # save.history() has saved your skin a few times when I’ve needed to record past interactive work right before a server has crashed.
     save.image()
-    
-    
+
+## 17 Delete rows
+	myData <- myData[-c(2, 4, 6), ]
+
+## 18 Showing colname and change colname
+
+	colnames(a)
+	colnames(a)[1]
+	conames(a) [1] <- "name_want_to_change"
 　　    　　　
    
     
