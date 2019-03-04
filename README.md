@@ -17,6 +17,7 @@
 ## 16 Saving R objects
 ## 17 Delete rows
 ## 18 Showing colname and change colname
+## 19 add new row
 
 ## 01 Getting Help in R
 
@@ -144,6 +145,7 @@
 	colnames(a)
 	colnames(a)[1]
 	conames(a) [1] <- "name_want_to_change"
-　　    　　　
-   
+
+## 19 add new row
+	newrow <- data.frame(V1 = 'Others', V2 = 100 - colSums(Control_1887322136[2]))
     
