@@ -19,6 +19,10 @@
 ## 18 Showing colname and change colname
 ## 19 add new row
 ## 20 getting certain rows or columns of a dataframe
+## 21 exporting dataframe
+## 22 compare dataframe A and B and find out the unique ones in A
+## 23 aggregating the objects in the same column and add up the value in another column
+## 24 sorting a column
 
 ## 01 Getting Help in R
 
@@ -151,5 +155,20 @@
 	newrow <- data.frame(V1 = 'Others', V2 = 100 - colSums(Control_1887322136[2]))
 	
 ## 20 getting certain rows or columns of a dataframe
-	df[1:4,]	
+	df[1:4,]
+	
+## 21 exporting dataframe
+	write.table(exportingdataframe, "/path/of/the/exportingdataframe")
+	
+## 22 compare dataframe A and B and find out the unique ones in A
+	setdiff(dataframe_A, Dataframe_B)
+	
+## 23 aggregating the objects in the column A and add up the value in another column
+	aggregate(. ~ A, Control_pathabundance, sum)	
+	
+## 24 sorting a column
+	dataframe[order(dataframe$thesortingcolumn), ]
+	
+	
+	
     
