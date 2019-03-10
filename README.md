@@ -186,6 +186,8 @@
 ## 28 Merging two data.frame
 	merge( thedataframeyouwanttomerge, theoriginaldataframe, by='ref', all.y = T, sort= T)
 	
+	while(i<681){list1[[i]]<-wilcox.test(as.numeric(mer[i,2:14]), as.numeric(mer[i,15:27]));i=i+1}
+	
 	
 	
 	
