@@ -23,6 +23,7 @@
 ## 22 compare dataframe A and B and find out the unique ones in A
 ## 23 aggregating the objects in the same column and add up the value in another column
 ## 24 sorting a column
+## 25 Delete A Column Of A Data Frame In R Directly
 
 ## 01 Getting Help in R
 
@@ -168,6 +169,9 @@
 	
 ## 24 sorting a column
 	dataframe[order(dataframe$thesortingcolumn), ]
+	
+## 25 Delete A Column Of A Data Frame In R Directly
+	dataframe$columnyouwanttodelete -> NULL	
 	
 	
 	
