@@ -24,6 +24,9 @@
 ## 23 aggregating the objects in the same column and add up the value in another column
 ## 24 sorting a column
 ## 25 Delete A Column Of A Data Frame In R Directly
+## 26 Replace NA with 0
+## 27 using sink() to export list:
+## 28 Merging two data.frame
 
 ## 01 Getting Help in R
 
@@ -172,6 +175,17 @@
 	
 ## 25 Delete A Column Of A Data Frame In R Directly
 	dataframe$columnyouwanttodelete -> NULL	
+	
+## 26 Replace NA with 0
+	myDataframe[is.na(myDataframe)] = 0
+## 27 using sink() to export list:
+	sink("/path/you/want/to/save/the/export/output")
+	print(thelistyouwanttosave)
+	sink()
+
+## 28 Merging two data.frame
+	merge( thedataframeyouwanttomerge, theoriginaldataframe, by='ref', all.y = T, sort= T)
+	
 	
 	
 	
