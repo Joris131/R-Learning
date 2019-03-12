@@ -92,6 +92,7 @@
 ## 09 To remove a column:
 
     name_of_the_vector_or_dataframe_or_list$name_of_the_column <- NULL
+    myData <- myData[-c(2, 4, 6), ]
 
 ## 10 Debugging R Code:
 
