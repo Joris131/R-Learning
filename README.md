@@ -27,6 +27,8 @@
 ## 26 Replace NA with 0
 ## 27 using sink() to export list:
 ## 28 Merging two data.frame
+## 29 while
+
 
 ## 01 Getting Help in R
 
@@ -170,8 +172,9 @@
 ## 23 aggregating the objects in the column A and add up the value in another column
 	aggregate(. ~ A, Control_pathabundance, sum)	
 	
-## 24 sorting a column
+## 24 sorting a column （descending with "-")
 	dataframe[order(dataframe$thesortingcolumn), ]
+	dataframe[-order(dataframe$thesortingcolumn), ]	
 	
 ## 25 Delete A Column Of A Data Frame In R Directly
 	dataframe$columnyouwanttodelete -> NULL	
@@ -186,9 +189,10 @@
 ## 28 Merging two data.frame
 	merge( thedataframeyouwanttomerge, theoriginaldataframe, by='ref', all.y = T, sort= T)
 	
+## 29 while
 	while(i<681){list1[[i]]<-wilcox.test(as.numeric(mer[i,2:14]), as.numeric(mer[i,15:27]));i=i+1}
 	
-	
+
 	
 	
     
